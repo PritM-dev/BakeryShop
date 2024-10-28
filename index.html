@@ -9,6 +9,13 @@
       content="Discover delicious treats at Sweet Delights Bakery. We specialize in artisanal cakes, pastries, and breads."
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -76,70 +83,159 @@
         </div>
       </section>
 
-      <section id="products" class="py-5 bg-light">
+      <section id="products" class="products-section">
         <div class="container">
+          <div class="section-header">
             <h2>Our Delicious Treats</h2>
-            <div class="row" id="product-row">
-                <div class="col-md-4 mb-4">
-                    <div class="card product-card">
-                        <img src="images/photo-1623888884968-b5a895f882dc-2.avif" class="card-img-top" alt="Chocolate Cake" />
-                        <div class="card-body">
-                            <h3 class="card-title">Chocolate Cake</h3>
-                            <p class="card-text">Rich, moist chocolate cake with creamy frosting.</p>
-                            <p class="card-text"><strong>Price: ₹499.99</strong></p>
-                            <button class="btn btn-primary">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card product-card">
-                        <img src="images/premium_photo-1675715403615-d42607a97d8e.jpeg" class="card-img-top" alt="Butter Croissant" />
-                        <div class="card-body">
-                            <h3 class="card-title">Butter Croissant</h3>
-                            <p class="card-text">Flaky, buttery croissant baked to perfection.</p>
-                            <p class="card-text"><strong>Price: ₹149.99</strong></p>
-                            <button class="btn btn-primary">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card product-card">
-                        <img src="images/premium_photo-1701007201981-918b53b2fd4e.jpeg" class="card-img-top" alt="Artisan Bread" />
-                        <div class="card-body">
-                            <h3 class="card-title">Artisan Bread</h3>
-                            <p class="card-text">Freshly baked artisan bread with a crispy crust.</p>
-                            <p class="card-text"><strong>Price: ₹99.99</strong></p>
-                            <button class="btn btn-primary">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card product-card">
-                        <img src="images/FruitTart.jpg" class="card-img-top" alt="Fruit Tart" />
-                        <div class="card-body">
-                            <h3 class="card-title">Fruit Tart</h3>
-                            <p class="card-text">Delicious tart filled with fresh seasonal fruits.</p>
-                            <p class="card-text"><strong>Price: ₹299.99</strong></p>
-                            <button class="btn btn-primary">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card product-card">
-                        <img src="images/cheesecake.jpg" class="card-img-top" alt="Cheesecake" />
-                        <div class="card-body">
-                            <h3 class="card-title">Cheesecake</h3>
-                            <p class="card-text">Creamy cheesecake with a buttery crust.</p>
-                            <p class="card-text"><strong>Price: ₹349.99</strong></p>
-                            <button class="btn btn-primary">Order Now</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="slider-navigation">
+              <button class="nav-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="nav-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
+          </div>
+
+          <div class="product-slider">
+            <div class="slider-container">
+              <!-- Product 1 -->
+              <div class="product-card">
+                <div class="card-badge">Bestseller</div>
+                <div class="product-image">
+                  <img
+                    src="images/photo-1623888884968-b5a895f882dc-2.avif"
+                    alt="Chocolate Cake"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>Chocolate Cake</h3>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(4.5)</span>
+                  </div>
+                  <p>Rich, moist chocolate cake with creamy frosting.</p>
+                  <div class="price">₹499.99</div>
+                  <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/premium_photo-1675715403615-d42607a97d8e.jpeg"
+                    alt="Butter Croissant"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>Butter Croissant</h3>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(4.0)</span>
+                  </div>
+                  <p>Flaky, buttery croissant baked to perfection.</p>
+                  <div class="price">₹149.99</div>
+                  <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/premium_photo-1701007201981-918b53b2fd4e.jpeg"
+                    alt="Artisan Bread"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>Artisan Bread</h3>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(3.7)</span>
+                  </div>
+                  <p>Freshly baked artisan bread with a crispy crust.</p>
+                  <div class="price">₹99.99</div>
+                  <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/FruitTart.jpg"  
+                    alt="Fruit Tart"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>Fruit Tart</h3>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(4.2)</span>
+                  </div>
+                  <p>Delicious tart filled with fresh seasonal fruits.</p>
+                  <div class="price">₹299.99</div>
+                  <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                  src="images/cheesecake.jpg"  
+                  alt="Cheesecake"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3>Cheesecake</h3>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(4.5)</span>
+                  </div>
+                  <p>Creamy cheesecake with a buttery crust.</p>
+                  <div class="price">₹349.99</div>
+                  <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-dots"></div>
         </div>
-    </section>
-    
-    
+      </section>
 
       <section id="contact" class="py-5">
         <div class="container">
@@ -171,7 +267,7 @@
     <footer class="bg-dark text-light py-3">
       <div class="container text-center">
         <!-- copyright Prit Modi -->
-        <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p> 
+        <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p>
       </div>
     </footer>
 
